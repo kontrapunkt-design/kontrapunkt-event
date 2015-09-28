@@ -6253,6 +6253,11 @@ p small {
 .top--20151013 .underlay {
   background-color: rgba(0, 0, 0, 0.5); }
 
+.event-20151013 > .reveal-modal {
+  max-width: 50rem; }
+  .event-20151013 > .reveal-modal .indicates-required {
+    float: right; }
+
 .top-video {
   padding: 3.75rem 0;
   color: white;

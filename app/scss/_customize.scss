@@ -147,6 +147,15 @@ p{
 		background-color:rgba(0,0,0,.5);
 	}
 }
+
+.event-20151013 > .reveal-modal {
+  max-width: 50rem;
+
+  .indicates-required {
+    float: right;
+  }
+}
+
 .top-video{
 	padding: $column-gutter*2 0;
 	color:white;
