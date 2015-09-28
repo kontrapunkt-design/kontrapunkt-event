@@ -134,6 +134,19 @@ p{
 		background-color:rgba(0,0,0,1);
 	}
 }
+.top--20151013{
+  padding: $column-gutter*17 0 $column-gutter*4;
+	background:no-repeat center center transparent fixed url("../images/kim-meyer.png");
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		-o-background-size: cover;
+		background-size: cover;
+}
+.top--20151013{
+	.underlay{
+		background-color:rgba(0,0,0,1);
+	}
+}
 .top-video{
 	padding: $column-gutter*2 0;
 	color:white;
@@ -199,7 +212,7 @@ p{
 	}
 }
 
-video { 
+video {
   position: absolute;
   right: 0;
   top: 0;
@@ -300,7 +313,7 @@ ul.lab-collection{
 	}
 	.event-info{
 		h2{
-			margin-top:$column-gutter*2;			
+			margin-top:$column-gutter*2;
 		}
 		.tag{
 		}

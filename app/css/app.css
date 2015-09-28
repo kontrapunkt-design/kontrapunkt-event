@@ -6242,6 +6242,17 @@ p small {
 .top--20150610 .underlay {
   background-color: black; }
 
+.top--20151013 {
+  padding: 31.875rem 0 7.5rem;
+  background: no-repeat center center transparent fixed url("../images/kim-meyer.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.top--20151013 .underlay {
+  background-color: black; }
+
 .top-video {
   padding: 3.75rem 0;
   color: white;
