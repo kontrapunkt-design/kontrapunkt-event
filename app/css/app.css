@@ -6251,7 +6251,7 @@ p small {
   background-size: cover; }
 
 .top--20151013 .underlay {
-  background-color: black; }
+  background-color: rgba(0, 0, 0, 0.5); }
 
 .top-video {
   padding: 3.75rem 0;
