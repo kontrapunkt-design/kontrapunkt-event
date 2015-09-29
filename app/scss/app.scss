@@ -5,11 +5,8 @@
 @import "normalize";
 @import "settings";
 
-@import "../../compass-mixins/lib/compass";
-
-
 // import compass
-
+@import "../bower_components/compass-mixins/lib/compass";
 
 // Make sure the charset is set appropriately
 @charset "UTF-8";
