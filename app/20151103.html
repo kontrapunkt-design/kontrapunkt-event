@@ -1,0 +1,318 @@
+<!doctype html>
+<html class="no-js" lang="en" >
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontrapunkt: wake up call | NYTÆNK DIN DIGITALE STRATEGI</title>
+    <!-- build:css css/libraries.min.css -->
+    <!-- bower:css -->
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css css/app.min.css -->
+    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/app_override.css">
+    <!-- endbuild -->
+    <!-- build:js js/vendor/modernizr.min.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+    <script>
+function initialize() {
+
+  // Create an array of styles.
+  var styles = [
+  {
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "landscape",
+    "stylers": [
+      { "visibility": "simplified" },
+      { "color": "#ffffff" }
+    ]
+  },{
+    "featureType": "poi",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road",
+    "stylers": [
+      { "visibility": "simplified" }
+    ]
+  },{
+    "featureType": "water",
+    "stylers": [
+      { "color": "#eeeeee" }
+    ]
+  },{
+    "featureType": "transit",
+    "stylers": [
+      { "visibility": "off" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "geometry",
+    "stylers": [
+      { "color": "#cccccc" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels.text",
+    "stylers": [
+      { "visibility": "simplified" },
+      { "color": "#333333" }
+    ]
+  },{
+    "featureType": "administrative",
+    "stylers": [
+      { "visibility": "simplified" },
+      { "color": "#808080" }
+    ]
+  },{
+    "featureType": "road",
+    "elementType": "labels.icon",
+    "stylers": [
+      { "color": "#808080" },
+      { "visibility": "off" }
+    ]
+  }
+];
+  // marker
+  var myLatlng = new google.maps.LatLng(55.679272, 12.581810000000019);
+
+  // Create a new StyledMapType object, passing it the array of styles,
+  // as well as the name to be displayed on the map type control.
+  var styledMap = new google.maps.StyledMapType(styles,
+    {name: "Styled Map"});
+
+  // Create a map object, and include the MapTypeId to add
+  // to the map type control.
+  var mapOptions = {
+    zoom: 12,
+    center: new google.maps.LatLng(55.679272, 12.581810000000019),
+    mapTypeControlOptions: {
+      mapTypeIds: [google.maps.MapTypeId.ROADMAP, 'map_style']
+    }
+  };
+  var map = new google.maps.Map(document.getElementById('map-canvas'),
+    mapOptions);
+
+  var image = 'images/map-marker.png';
+
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Kontrapunkt',
+      icon: image
+  });
+
+
+  //Associate the styled map with the MapTypeId and set it to display.
+  map.mapTypes.set('map_style', styledMap);
+  map.setMapTypeId('map_style');
+}
+      google.maps.event.addDomListener(window, 'load', initialize);
+    </script>
+<script>
+ (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+ (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+ })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ ga('create', 'UA-6070496-5', 'auto');
+ ga('send', 'pageview');
+
+</script>
+</head>
+  <body>
+    <div id="myModal" class="reveal-modal" data-reveal aria-labelledby="modalTitle" aria-hidden="true" role="dialog">
+      <div class="mailchimp-embed-container">
+        <!-- Begin MailChimp Signup Form -->
+        <div id="mc_embed_signup" class="row">
+        <form action="//kontrapunkt.us10.list-manage.com/subscribe/post?u=93b4bfd50095c5edf0ed59f07&amp;id=5ace66da2d" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+            <div id="mc_embed_signup_scroll">
+              <div class="row">
+                <div class="small-12 medium-10 large-10 columns">
+                    <h2>Event tilmeldning, d. 3 November kl. 9-10.30 hos Kontrapunkt</h2>
+                    <p>Tag endelig din kollega med , men giv os besked om, hvor mange i kommer. Så sørger vi for varm kaffe og sprøde croissanter til alle. S.U. senest d. 2 november. </p>
+                    <p>Vi anser tilmeldinger som bindende og vil sætte stor pris på afbud et par dage før arrangementet af hensyn til forplejning.</p>
+                </div>
+              </div>
+              <div class="row">
+                <div class="mc-field-group small-12 medium-6 large-3 columns">
+                    <label for="mce-FNAME">Fornavn</label>
+                    <input type="text" value="" name="FNAME" class="" id="mce-FNAME">
+                </div>
+                <div class="mc-field-group small-12 medium-6 large-3 columns">
+                    <label for="mce-LNAME">Efternavn </label>
+                    <input type="text" value="" name="LNAME" class="" id="mce-LNAME">
+                </div>
+                <div class="mc-field-group small-12 medium-6 large-3 columns">
+                    <label for="mce-MMERGE3">Titel </label>
+                    <input type="text" value="" name="MMERGE3" class="" id="mce-MMERGE3">
+                </div>
+                <div class="mc-field-group small-12 medium-6 large-3 columns">
+                    <label for="mce-MMERGE4">Firma </label>
+                    <input type="text" value="" name="MMERGE4" class="" id="mce-MMERGE4">
+                </div>
+              </div>
+              <div class="row">
+                <div class="mc-field-group small-12 medium-12 large-6 columns">
+                    <label for="mce-EMAIL">Emailadresse <span class="asterisk">*</span>
+                    </label>
+                    <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL">
+                </div>
+                <div class="mc-field-group size1of2 small-12 large-6 end columns">
+                    <div class="row collapse">
+                        <div class="large-12 columns">
+                            <label for="mce-MMERGE6">Hvor mange kommer i?  <span class="asterisk">*</span>
+                            </label>
+                        </div>
+                        <div class="small-8 columns">
+                            <input type="number" name="MMERGE6" class="required" value="" id="mce-MMERGE6">
+                        </div>
+                        <div class="small-4 columns">
+                            <div id="mce-responses" class="clear">
+                                <div class="response" id="mce-error-response" style="display:none"></div>
+                                <div class="response" id="mce-success-response" style="display:none"></div>
+                            </div>
+                            <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                            <div style="position: absolute; left: -5000px;"><input type="text" name="b_93b4bfd50095c5edf0ed59f07_5ace66da2d" tabindex="-1" value=""></div>
+                            <div class="clear"><input type="submit" value="Tilmeld" name="subscribe" id="mc-embedded-subscribe" class="button postfix"></div>
+                            </div>
+                    </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="large-12 columns">
+                  <div class="indicates-required text-right"><span class="asterisk">*</span> Skal udfyldes</div>
+              </div>
+              </div>
+        </div>
+        </form>
+        </div>
+        <!--End mc_embed_signup-->
+      </div>
+      <a class="close-reveal-modal" aria-label="Close">
+        <div class="close">
+          <span class="close-item"></span>
+          <span class="close-item"></span>
+        </div>
+      </a>
+    </div>
+    <div class="top top-video top--20150610">
+        <div class="row">
+            <div class="small-12  medium-10 large-6 columns">
+                <h3>Wake up call:</h3>
+                <h1>Nytænk din digitale strategi</h1>
+                <h3>Opsøg ikke din målgruppe. Få dem til dig.<br>
+                    Kom og bliv klogere <b><time datetime="2015-11-03 09:00">d. 3 November kl. 9-10.30</time></b></h3>
+                <a href="#" data-reveal-id="myModal" class="button large outline">Tilmeld dig nu</a>
+            </div>
+        </div>
+        <video id="video" src="http://ak2.picdn.net/shutterstock/videos/2529344/preview/stock-footage-flight-over-clouds-loop-able-d-animation-version-without-sun.mp4"
+            preload="yes" loop autoplay muted
+            poster="video/print-low.gif" type="video/mp4">
+            <!-- <source src="video/print-low.webm" type="video/webm"> -->
+            <!-- <source src="video/print-low.ogv" type="video/ogg"> -->
+        </video>
+        <div class="underlay"></div>
+    </div>
+    <div class="main-intro">
+        <div class="row">
+            <div class="small-12 medium-8 large-9 columns">
+                <div class="row">
+                    <div class="small-12 medium-12 large-10 columns">
+                        <h3>Kontrapunkt serverer best practice, holdninger og do’s and don’ts til morgenkaffen og croissanterne.</h3>
+                        <p>
+                          Hør hvordan du kan skabe én samlet strategi, der passer til både forretningsstrategien og forbrugernes behov. Og lær hvordan du kan udnytte de muligheder, der ligger i at kommunikere på mange digitale platforme.
+                        </p>
+                    </div>
+                </div>
+                <div class="row row-break">
+                    <div class="small-12 large-9 columns">
+                    <h4>Oplæg fra Kontrapunkt og gæsteoplæg fra DAYFAIR</h4>
+                    </div>
+                    <div class="small-12 medium-6 large-5 columns">
+                        <figure class="figure">
+                            <img src="images/image-kontrapunkt-digital.jpg" alt="">
+                        </figure>
+                        <p>Kontrapunkts Partner og Head of Digital Morten Gade stiller skarpt på de væsentligste elementer i udviklingen af din digitale tilstedeværelse fra teknologi til tone-of-voice, og guider til at sikre relevans på tværs af platforme.</p>
+                    </div>
+                    <div class="small-12 medium-6 large-5 large-offset-1 end columns">
+                        <figure class="figure">
+                            <img src="images/image-dayfair.jpg" alt="">
+                        </figure>
+                        <p>Hør også Salgs- og Marketingdirektør David Demsitz fra DAYFAIR fortælle om indsigterne bag DAYFAIR-app'en, og lær af hans erfaringer gennem 15 års arbejde indenfor kommerciel ledelse og digital forretningsudvikling.</p>
+                    </div>
+                    <div class="small-12 columns">
+                      <p><br><br><b>Arrangementet er gratis</b></p>
+                    </div>
+                </div>
+            </div>
+            <div class="small-12 medium-4 large-3 columns">
+                <h3 class="text-center">Kontaktperson</h3>
+                <div class="event-speaker">
+                    <figure><img src="images/profiles/profile-rikke.jpg" alt=""></figure>
+                    <h5>Rikke Nalepa Olesen</h5>
+                    <p>Senior Brand Strategist</p>
+                    <a href="tel:+4527899926">+45 27 89 99 26</a>
+                    <a href="mailto:rno@kontrapunkt.com">rno@kontrapunkt.com</a>
+                    <p>Kontrapunkt</p>
+                </div>
+            </div>
+        </div>
+    </div>
+   <div class="main-content main-content-lab">
+        <div class="row">
+            <div class="small-12 columns">
+                <ul class="row collapse lab-collection"></ul>
+            </div>
+            <div class="small-12 medium-12 columns book-container">
+               <div class="row">
+                    <div class="small-12 medium-12 columns book-container">
+                        <div class="row collapse">
+                            <div class="small-6 medium-4 columns book-container--time">
+                                <h6>d. 3 November kl. 9-10.30</h6>
+                            </div>
+                            <div class="small-6 medium-4 columns book-container--location">
+                                <h6>Kontrapunkt, Nikolaj Plads 2</h6>
+                            </div>
+                            <div class="small-12 medium-4 columns end">
+                                <a href="#" data-reveal-id="myModal" class="button expand">Tilmeld</a>
+                            </div>
+                        </div>
+                    </div>
+               </div>
+           </div>
+        </div>
+   </div>
+    <div class="main-content main-content--map">
+        <div id="map-canvas"></div>
+    </div>
+    <div class="bottom">
+        <div class="row">
+            <div class="small-12 columns">
+                <p>The event is hosted by <a href="kontrapunkt.com">kontrapunkt</a></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- build:js js/vendor/libraries.min.js -->
+    <!-- bower:js -->
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:js js/vendor/foundation.min.js -->
+    <script src="bower_components/foundation/js/foundation/foundation.js"></script>
+    <script src="bower_components/foundation/js/foundation/foundation.reveal.js"></script>
+    <!-- endbuild -->
+    <!-- build:js js/app.min.js -->
+    <script src="js/app.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>
